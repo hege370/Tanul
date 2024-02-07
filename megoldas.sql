@@ -8,7 +8,9 @@ INSERT INTO jatekok (sorszam, evszam, varos, orszag)
   VALUES ('XVII', 2024, 'Párizs', 'Franciaország')
 
 -- 11.feladat
-
+UPDATE versenyszamok
+SET versenyszam = 'vegyespáros'
+WHERE id = 9
 
 -- 12.feladat
 
