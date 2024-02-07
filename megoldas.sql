@@ -4,7 +4,8 @@ CHARACTER SET utf8mb3
 COLLATE utf8mb3_hungarian_ci;
 
 -- 10.feladat
-
+INSERT INTO jatekok (sorszam, evszam, varos, orszag)
+  VALUES ('XVII', 2024, 'Párizs', 'Franciaország')
 
 -- 11.feladat
 
