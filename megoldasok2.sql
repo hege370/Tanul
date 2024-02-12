@@ -7,12 +7,9 @@ CHARACTER SET utf8
 COLLATE utf8_hungarian_ci;
 
 
--- 11. feladat:
-
-
-
 -- 12. feladat:
-
+INSERT INTO megallok (id, nev)
+  VALUES (198, 'Kőbányai garázs')
 
 
 -- 13. feladat:
