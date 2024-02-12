@@ -30,4 +30,19 @@ LIMIT 5
 
 
 -- 15.feladat
-
+SELECT
+  eredmenyek.jatekId AS jatek,
+  eredmenyek.helyezes AS hely,
+  sportagak.sportag,
+  olimpikonok.nev AS bajnokok
+FROM eredmenyek
+  INNER JOIN jatekok
+    ON eredmenyek.jatekId = jatekok.sorszam
+  INNER JOIN olimpikonok
+    ON eredmenyek.olimpikonId = olimpikonok.id
+  INNER JOIN versenyszamok
+    ON eredmenyek.versenyszamId = versenyszamok.id
+  INNER JOIN sportagak
+    ON versenyszamok.sportagId = sportagak.id
+WHERE olimpikonok.nev LIKE '%,%'
+ORDER BY hely, sportagak.sportag, jatek
