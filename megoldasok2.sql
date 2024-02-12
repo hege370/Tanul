@@ -2,7 +2,9 @@
 
 
 -- 10. feladat:
-
+CREATE DATABASE haozat
+CHARACTER SET utf8
+COLLATE utf8_hungarian_ci;
 
 
 -- 11. feladat:
